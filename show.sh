@@ -10,7 +10,7 @@ function help(){
 
 function check_occupy(){
     port=$1
-    occupy=$(netstat -ntulp | grep ${port})
+    occupy=$(netstat -ntul | grep ${port})
     if [[ -n "${occupy}" ]]
     then
         return 1
