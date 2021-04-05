@@ -44,12 +44,12 @@ class Job(TextFileParser):
     def __init__(self, inputfile, outputfile):
         super().__init__(inputfile, outputfile)
 
-    # def parse_one_line(self, line):
-    #     print("line -> {}".format(line))
-    #     line = line.strip()
-    #     content = line + '\t' + "XXXXXXXXXXX1234567890" + "\n"
-    #     print("content -> {}".format(content))
-    #     return content
+    def parse_one_line(self, line):
+        print("line -> {}".format(line))
+        line = line.strip()
+        content = line + '\t' + "XXXXXXXXXXX1234567890" + "\n"
+        print("content -> {}".format(content))
+        return content
 
 
 
