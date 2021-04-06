@@ -27,7 +27,7 @@ class TextFileParser(FileParser):
     
     def parse_one_line(self, line):
         # 子类必须要重写这个函数
-        raise NotImplementedError
+        raise NotImplementedError("子类必须要重写这个函数")
 
     def process(self):
         print("Derived process")
